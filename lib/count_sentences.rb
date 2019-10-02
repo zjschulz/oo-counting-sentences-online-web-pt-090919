@@ -28,7 +28,7 @@ class String
 
   def count_sentences
   delimiters = [".","!","?"]
-  self.split(Regexp.union(delimiters)) == hash
+  self.split(Regexp.union(delimiters)).count
   end
   
 end
