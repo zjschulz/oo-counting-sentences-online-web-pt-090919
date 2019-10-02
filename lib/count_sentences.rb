@@ -28,8 +28,8 @@ class String
 
   def count_sentences
   delimiters = [".","!","?"]
-  hash == self.split(Regexp.union(delimiters)).select! { |element| element&.size.to_i > 0 }
-  hash.count
+  (self.split(Regexp.union(delimiters)).select! { |element| element&.size.to_i > 0 }).count
+  
   end
   
 end
