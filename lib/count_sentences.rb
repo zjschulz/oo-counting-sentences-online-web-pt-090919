@@ -29,7 +29,6 @@ class String
   def count_sentences
   delimiters = [".","!","?"]
   self.split(Regexp.union(delimiters)).select! { |element| element&.size.to_i > 0 }
-  
   end
   
 end
